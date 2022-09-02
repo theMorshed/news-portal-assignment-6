@@ -10,6 +10,8 @@
     <!-- tailwindcss and daisyui library -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ac0190eb11.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-neutral-100">
@@ -64,24 +66,158 @@
                     <a class="normal-case text-xl">4 items found for category Entertainment</a>
                 </div>
 
-                <div class="sort-news ml-8 py-6">
-                    <a class="normal-case text-xl">Sort By View: </a>
-                    <select class="select w-30 max-w-xs ml-8">
-                        <option disabled selected>Default</option>
-                        <option>Normal Apple</option>
-                        <option>Normal Orange</option>
-                        <option>Normal Tomato</option>
-                    </select>
+                <div class="sort-news ml-8 py-6 flex justify-between">
+                    <div class="sort-field">
+                        <a class="normal-case text-xl">Sort By View: </a>
+                        <select class="select w-30 max-w-xs ml-8">
+                            <option disabled selected>Default</option>
+                            <option>Normal Apple</option>
+                            <option>Normal Orange</option>
+                            <option>Normal Tomato</option>
+                        </select>
+                    </div>
+                    <div class="sort-button">
+                        <button class="btn btn-primary font-normal normal-case mr-2">Today's Pick</button>
+                        <button class="btn btn-outline btn-primary font-normal normal-case">Trending</button>
+                    </div>
                 </div>
             </div>
 
             <!-- news container section -->
-            <div class="news-container">
-
+            <div class="news-container pb-14">
+                <!-- single news -->
+                <div class="card lg:card-side bg-base-100 shadow-xl p-5 my-5">
+                    <figure>
+                        <img src="image/blog.png" alt="blog">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl mb-3">The best fasion influencer follow for sartorial inspiration</h2>
+                        <p class="text-normal text-gray-400">From our favourite UK influencers to the best missives from
+                            Milan and the coolest New Yorkers, read on some of the
+                            best fashion blogs out there, and for even more inspiration, do head to our separate black
+                            fashion influencer round-
+                            up.</p>
+                        <br>
+                        <p class="text-normal text-gray-400">Fancy some shopping deals? Check out these amazing sales:
+                            Zara Black Friday, ASOS Black Friday, Missoma Black
+                            Friday and Gucci Black Friday...</p>
+                        <div class="card-actions mt-4 flex justify-between items-center text-gray-500">
+                            <div class="author flex items-center">
+                                <div class="w-10 rounded-full">
+                                    <img class="w-full" src="image/avartar.png" />
+                                </div>
+                                <div class="author-details ml-3">
+                                    <p>Jane Cooper</p>
+                                    <p>Jan 10, 2022</p>
+                                </div>
+                            </div>
+                            <div class="view flex items-center">
+                                <i class="fa-regular fa-eye text-2xl"></i>
+                                <p class="ml-3 text-xl font-semibold">1.5m</p>
+                            </div>
+                            <div class="rating flex items-center gap-2">
+                                <i class="fa-solid fa-star-half-stroke text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                            </div>
+                            <i class="fa-solid fa-arrow-right text-2xl text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- single news -->
+                <div class="card lg:card-side bg-base-100 shadow-xl p-5 my-5">
+                    <figure>
+                        <img src="image/blog.png" alt="blog">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl mb-3">The best fasion influencer follow for sartorial inspiration</h2>
+                        <p class="text-normal text-gray-400">From our favourite UK influencers to the best missives from
+                            Milan and the coolest New Yorkers, read on some of the
+                            best fashion blogs out there, and for even more inspiration, do head to our separate black
+                            fashion influencer round-
+                            up.</p>
+                        <br>
+                        <p class="text-normal text-gray-400">Fancy some shopping deals? Check out these amazing sales:
+                            Zara Black Friday, ASOS Black Friday, Missoma Black
+                            Friday and Gucci Black Friday...</p>
+                        <div class="card-actions mt-4 flex justify-between items-center text-gray-500">
+                            <div class="author flex items-center">
+                                <div class="w-10 rounded-full">
+                                    <img class="w-full" src="image/avartar.png" />
+                                </div>
+                                <div class="author-details ml-3">
+                                    <p>Jane Cooper</p>
+                                    <p>Jan 10, 2022</p>
+                                </div>
+                            </div>
+                            <div class="view flex items-center">
+                                <i class="fa-regular fa-eye text-2xl"></i>
+                                <p class="ml-3 text-xl font-semibold">1.5m</p>
+                            </div>
+                            <div class="rating flex items-center gap-2">
+                                <i class="fa-solid fa-star-half-stroke text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                            </div>
+                            <i class="fa-solid fa-arrow-right text-2xl text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- single news -->
+                <div class="card lg:card-side bg-base-100 shadow-xl p-5 my-5">
+                    <figure>
+                        <img src="image/blog.png" alt="blog">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl mb-3">The best fasion influencer follow for sartorial inspiration</h2>
+                        <p class="text-normal text-gray-400">From our favourite UK influencers to the best missives from
+                            Milan and the coolest New Yorkers, read on some of the
+                            best fashion blogs out there, and for even more inspiration, do head to our separate black
+                            fashion influencer round-
+                            up.</p>
+                        <br>
+                        <p class="text-normal text-gray-400">Fancy some shopping deals? Check out these amazing sales:
+                            Zara Black Friday, ASOS Black Friday, Missoma Black
+                            Friday and Gucci Black Friday...</p>
+                        <div class="card-actions mt-4 flex justify-between items-center text-gray-500">
+                            <div class="author flex items-center">
+                                <div class="w-10 rounded-full">
+                                    <img class="w-full" src="image/avartar.png" />
+                                </div>
+                                <div class="author-details ml-3">
+                                    <p>Jane Cooper</p>
+                                    <p>Jan 10, 2022</p>
+                                </div>
+                            </div>
+                            <div class="view flex items-center">
+                                <i class="fa-regular fa-eye text-2xl"></i>
+                                <p class="ml-3 text-xl font-semibold">1.5m</p>
+                            </div>
+                            <div class="rating flex items-center gap-2">
+                                <i class="fa-solid fa-star-half-stroke text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                                <i class="fa-regular fa-star text-2xl"></i>
+                            </div>
+                            <i class="fa-solid fa-arrow-right text-2xl text-primary"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="bg-white text-center py-6 text-lg font-normal text-gray-500">
+        <p>Copywrite 2022 Morning Press</p>
+    </footer>
+    <!-- footer end -->
 
     <!-- javascript file -->
     <script src="js/library.js"></script>
