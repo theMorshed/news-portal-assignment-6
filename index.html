@@ -12,17 +12,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-neutral-100">
     <!-- header start -->
     <header class="w-10/12 mx-auto pt-8">
-        <nav class="main-menu border-b border-gray-200 pb-6">
-            <div class="navbar bg-base-100">
+        <nav class="main-menu border-b-2 border-gray-200 pb-6">
+            <div class="navbar">
                 <div class="flex-1">
-                    <a class="text-primary normal-case text-xl font-semibold"><span class="btn btn-primary text-white text-xl normal-case">Morning</span> Press</a>
+                    <a class="text-primary normal-case text-xl font-semibold"><span
+                            class="btn btn-primary text-white text-xl normal-case">Morning</span> Press</a>
                 </div>
                 <div class="flex-none gap-2">
                     <ul class="menu menu-horizontal p-0 text-gray-500 font-semibold">
-                        <li class="text-primary underline"><a>Home</a></li>                        
+                        <li class="text-primary underline"><a>Home</a></li>
                         <li class="hover:text-primary hover:underline"><a>Blog</a></li>
                     </ul>
                     <div class="avartar">
@@ -30,13 +31,26 @@
                             <div class="w-10 rounded-full">
                                 <img src="image/avartar.png" />
                             </div>
-                        </label>                        
+                        </label>
                     </div>
                 </div>
             </div>
         </nav>
         <nav class="category-menu">
-
+            <div class="navbar">
+                <ul class="menu-horizontal p-0 text-gray-500 flex flex-wrap">
+                    <li class="hover:text-primary py-4 px-8 cursor-default hover:bg-blue-100"><a>Home</a></li>
+                    <li class="hover:text-primary py-4 px-8 cursor-default hover:bg-blue-100"><a>Breaking news</a></li>
+                    <li class="hover:text-primary py-4 px-8 cursor-default hover:bg-blue-100"><a>Regular news</a></li>
+                    <li class="hover:text-primary py-4 px-8 cursor-default hover:bg-blue-100"><a>International news</a>
+                    </li>
+                    <li class="hover:text-primary py-4 px-8 cursor-default hover:bg-blue-100"><a>Sports</a></li>
+                    <li class="hover:text-primary py-4 px-8 cursor-default hover:bg-blue-100"><a>Entertainment</a></li>
+                    <li class="hover:text-primary py-4 px-8 cursor-default hover:bg-blue-100"><a>Culture</a></li>
+                    <li class="hover:text-primary py-4 px-8 cursor-default hover:bg-blue-100"><a>Arts</a></li>
+                    <li class="hover:text-primary py-4 px-8 cursor-default hover:bg-blue-100"><a>All news</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- header end -->
@@ -46,7 +60,19 @@
         <section class="news">
             <!-- news info section -->
             <div class="new-info">
+                <div class="news-count navbar bg-base-100 rounded-lg pl-5 my-6">
+                    <a class="normal-case text-xl">4 items found for category Entertainment</a>
+                </div>
 
+                <div class="sort-news ml-8 py-6">
+                    <a class="normal-case text-xl">Sort By View: </a>
+                    <select class="select w-30 max-w-xs ml-8">
+                        <option disabled selected>Default</option>
+                        <option>Normal Apple</option>
+                        <option>Normal Orange</option>
+                        <option>Normal Tomato</option>
+                    </select>
+                </div>
             </div>
 
             <!-- news container section -->
