@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +11,38 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <!-- header start -->
-    <header>
-        <nav class="main-menu">
-            
+    <header class="w-10/12 mx-auto pt-8">
+        <nav class="main-menu border-b border-gray-200 pb-6">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <a class="text-primary normal-case text-xl font-semibold"><span class="btn btn-primary text-white text-xl normal-case">Morning</span> Press</a>
+                </div>
+                <div class="flex-none gap-2">
+                    <ul class="menu menu-horizontal p-0 text-gray-500 font-semibold">
+                        <li class="text-primary underline"><a>Home</a></li>                        
+                        <li class="hover:text-primary hover:underline"><a>Blog</a></li>
+                    </ul>
+                    <div class="avartar">
+                        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="image/avartar.png" />
+                            </div>
+                        </label>                        
+                    </div>
+                </div>
+            </div>
         </nav>
         <nav class="category-menu">
-            
+
         </nav>
     </header>
     <!-- header end -->
 
     <!-- main start -->
-    <main>
+    <main class="w-10/12 mx-auto">
         <section class="news">
             <!-- news info section -->
             <div class="new-info">
@@ -42,4 +61,5 @@
     <script src="js/library.js"></script>
     <script src="js/news.js"></script>
 </body>
+
 </html>
