@@ -1,5 +1,8 @@
 const categoriesContainer = document.getElementById('category-menu');
+const progressBar = document.getElementById('progress-bar');
+
 categoriesContainer.addEventListener('click', async (event) => {
+    progressBar.classList.remove('hidden');
     const allCategories = await loadAllCategories();
     const categoriesArray = allCategories.data.news_category;
     const categoryValue = event.target.innerText;
@@ -11,5 +14,10 @@ categoriesContainer.addEventListener('click', async (event) => {
     });
     const categoryNews = await loadSingleCategory(categoryId);
     const newsArray = categoryNews.data;
+    newsArray.sort((a, b) => {
+        return b.total_view - a.total_view;
+    });
     displayAllNews(newsArray);
+
+    progressBar.classList.add('hidden');
 })
