@@ -20,15 +20,17 @@
         <nav class="main-menu border-b-2 border-gray-200 pb-6">
             <div class="navbar">
                 <div class="flex-1">
-                    <a href="index.html" class="text-primary normal-case text-xl font-semibold"><span
-                            class="btn btn-primary text-white text-xl normal-case">Morning</span> Press</a>
+                    <a href="index.html" class="text-primary normal-case text-xl font-semibold">
+                        <span class="btn btn-primary text-white text-xl normal-case">Morning</span> <span
+                            class="hidden sm:inline-block">Press</span>
+                    </a>
                 </div>
                 <div class="flex-none gap-2">
                     <ul class="menu menu-horizontal p-0 text-gray-500 font-semibold">
                         <li class="text-primary underline"><a href="index.html">Home</a></li>
                         <li class="hover:text-primary hover:underline"><a href="blog.html">Blog</a></li>
                     </ul>
-                    <div class="avartar">
+                    <div class="avartar hidden sm:inline-block">
                         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
                             <div class="w-10 rounded-full">
                                 <img src="image/avartar.png" />
@@ -54,14 +56,14 @@
 
                 <div class="sort-news ml-8 py-6 flex justify-between">
                     <div class="sort-field">
-                        <a class="normal-case text-xl">Sort By View: </a>
+                        <a class="normal-case text-xl">Sort <span class="hidden sm:inline-block">By View:</span></a>
                         <select class="select w-30 max-w-xs ml-8">
                             <option disabled selected>Default</option>
                             <option>Trending News</option>
                             <option>Hot News</option>
                         </select>
                     </div>
-                    <div class="sort-button">
+                    <div class="sort-button hidden md:block">
                         <button class="btn btn-primary font-normal normal-case mr-2">Today's Pick</button>
                         <button class="btn btn-outline btn-primary font-normal normal-case">Trending</button>
                     </div>

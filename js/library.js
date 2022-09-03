@@ -59,7 +59,7 @@ const displayAllNews = newsArr => {
     // loop through all news and display in UI
     newsArr.forEach(news => {
         // destructuring all necess property before use
-        const { title, details, image_url, total_view, _id: id } = news;
+        const { title, details, thumbnail_url, total_view, _id: id } = news;
         const { name: author_name, img: author_image, published_date: dateStr } = news.author;
         // create date object and month array for display date
         const date = new Date(dateStr);
@@ -69,7 +69,7 @@ const displayAllNews = newsArr => {
         singleNewsDiv.innerHTML = `
         <div class="card lg:card-side bg-base-100 shadow-xl px-4 py-3 my-7">
             <figure>
-                <img class="w-72 h-80" src="${image_url}" alt="blog">
+                <img class="w-72 h-80" src="${thumbnail_url}" alt="blog">
             </figure>
             <div class="card-body">
                 <h2 class="card-title text-3xl mb-3">${title ? title : 'Not Available'}</h2>
@@ -95,7 +95,7 @@ const displayAllNews = newsArr => {
                         <i class="fa-regular fa-star text-2xl"></i>
                         <i class="fa-regular fa-star text-2xl"></i>
                     </div>
-                    <label for="my-modal-5" class="fa-solid fa-arrow-right text-2xl text-primary" onclick="displayDetails('${id}')"></label>
+                    <label for="my-modal-5" class="text-xl text-primary cursor-pointer" onclick="displayDetails('${id}')">Details</label>
                 </div>
             </div>
         </div>
