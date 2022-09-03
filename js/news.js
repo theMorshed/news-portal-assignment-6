@@ -6,7 +6,7 @@ const progressBar = document.getElementById('progress-bar');
 const loadHomepageNews = async () => {
     // loader add
     progressBar.classList.remove('hidden');
-    const categoryNews = await loadSingleCategory('08');
+    const categoryNews = await loadSingleCategory('05');
     const newsArray = categoryNews.data;
     // sort news array descending order according to view count
     newsArray.sort((a, b) => {
@@ -14,7 +14,7 @@ const loadHomepageNews = async () => {
     });
     // display all news in UI
     displayAllNews(newsArray);
-    displayNewsCount(newsArray.length, "All News");
+    displayNewsCount(newsArray.length, "Entertainment");
 
     // loader remove
     progressBar.classList.add('hidden');
