@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Morning Press</title>
+    <!-- tailwindcss and daisyui library -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ac0190eb11.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-neutral-100">
+    <!-- header start -->
+    <header class="w-10/12 mx-auto pt-8">
+        <nav class="main-menu border-b-2 border-gray-200 pb-6">
+            <div class="navbar">
+                <div class="flex-1">
+                    <a href="index.html" class="text-primary normal-case text-xl font-semibold"><span
+                            class="btn btn-primary text-white text-xl normal-case">Morning</span> Press</a>
+                </div>
+                <div class="flex-none gap-2">
+                    <ul class="menu menu-horizontal p-0 text-gray-500 font-semibold">
+                        <li class="text-primary underline"><a href="index.html">Home</a></li>
+                        <li class="hover:text-primary hover:underline"><a href="blog.html">Blog</a></li>
+                    </ul>
+                    <div class="avartar">
+                        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="image/avartar.png" />
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="w-10/12 mx-auto">
+        <section class="news">
+            <!-- blog info section -->
+            <div class="new-info">
+                <div class="news-count navbar bg-base-100 rounded-lg pl-5 my-6">
+                    <a id="news-count" class="normal-case text-xl text-primary">4 Question will help you learn something
+                        important
+                        about ES6</a>
+                </div>
+
+                <div class="sort-news ml-8 py-6 flex justify-between">
+                    <div class="sort-field">
+                        <a class="normal-case text-xl">Sort By View: </a>
+                        <select class="select w-30 max-w-xs ml-8">
+                            <option disabled selected>Default</option>
+                            <option>Trending News</option>
+                            <option>Hot News</option>
+                        </select>
+                    </div>
+                    <div class="sort-button">
+                        <button class="btn btn-primary font-normal normal-case mr-2">Today's Pick</button>
+                        <button class="btn btn-outline btn-primary font-normal normal-case">Trending</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- blog container section -->
+            <div id="blog-container" class="news-container pb-14">
+                <!-- single question -->
+                <div class="card lg:card-side bg-base-100 shadow-xl px-4 py-3 my-7">
+                    <figure>
+                        <img class="w-80 h-80" src="image/var-let-const.png" alt="blog">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl mb-3">Difference between var let and const keyword in
+                            JavaScript
+                        </h2>
+                        <p class="text-normal text-gray-400">
+                            One of the features that came with ES6 is the addition of let and const, which can be
+                            used for variable declaration. we declare variable earlier using var keyword.<br>
+                            <strong class="text-black">Var:</strong> The scope of a var variable is functional
+                            scope, It can be updated and re-declared into the scope, It can be declared without
+                            initialization, It can be accessed without initialization as its default value is
+                            “undefined”.<br>
+                            <strong class="text-black">Let:</strong> The scope of a let variable is block scope, It
+                            can be updated but cannot be re-declared into the scope, t can be declared without
+                            initialization, It cannot be accessed without initialization otherwise it will give
+                            ‘referenceError’<br>
+                            <strong class="text-black">Const:</strong> The scope of a const variable is block scope,
+                            It cannot be updated or re-declared into the scope, It cannot be declared without
+                            initialization, It cannot be accessed without initialization, as it cannot be declared
+                            without initialization
+                        </p>
+                    </div>
+                </div>
+                <!-- single question -->
+                <div class="card lg:card-side bg-base-100 shadow-xl px-4 py-3 my-7">
+                    <figure>
+                        <img class="w-80 h-80" src="image/arrow-regular.png" alt="blog">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl mb-3">Difference between arrow function vs regular function
+                        </h2>
+                        <p class="text-normal text-gray-400">
+                            Arrow function — also called fat arrow function— is a new feature introduced in ES6 that
+                            is a more concise syntax for
+                            writing function expressions. While both regular JavaScript functions and arrow
+                            functions work in a similar manner,
+                            there are certain differences between them.<br>
+                            <strong class="text-black">Syntax:</strong> The arrow function example above allows a
+                            developer to accomplish the same result with fewer lines of code and
+                            approximately half the typing.<br>
+                            <strong class="text-black">Argument Bindings:</strong> Arrow functions do not have an
+                            arguments binding. However, they have access to the arguments object of the closest
+                            non-arrow parent function. Named and rest parameters are heavily relied upon to capture
+                            the arguments passed to arrow
+                            functions.<br>
+                            <strong class="text-black">Using this keyword:</strong> Unlike regular functions, arrow
+                            functions do not have their own this. The value of this inside an arrow function remains
+                            the same throughout the lifecycle of the function and is always bound to the value of
+                            this in the closest non-arrow
+                            parent function.
+                        </p>
+                    </div>
+                </div>
+                <!-- single question -->
+                <div class="card lg:card-side bg-base-100 shadow-xl px-4 py-3 my-7">
+                    <figure>
+                        <img class="w-80 h-80" src="image/mapforeach.png" alt="blog">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl mb-3">.forEach(), .map(), .filter() .... What's the
+                            difference?
+                        </h2>
+                        <p class="text-normal text-gray-400">
+                            <strong class="text-black">forEach():</strong> .forEach(), is used to execute the same
+                            code on every element in an array but does not change the array and it returns
+                            undefined.<br>
+                            <strong class="text-black">map():</strong> .map() executes the same code on every
+                            element in an array and returns a new array with the updated elements.<br>
+                            <strong class="text-black">filter():</strong> .filter() checks every element in an array
+                            to see if it meets a certain criteria and returns a new array with the
+                            elements that return truthy for the criteria.<br>
+                            <strong class="text-black">find():</strong> .The find() method returns the value of the
+                            first element that passes a test.
+                        </p>
+                    </div>
+                </div>
+                <!-- single question -->
+                <div class="card lg:card-side bg-base-100 shadow-xl px-4 py-3 my-7">
+                    <figure>
+                        <img class="w-80 h-80" src="image/arrow-regular.png" alt="blog">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl mb-3">Why you should use template string or template literal
+                        </h2>
+                        <p class="text-normal text-gray-400">
+                            Template literals are literals delimited with backtick (`) characters, allowing for
+                            multi-line strings, for string
+                            interpolation with embedded expressions, and for special constructs called tagged
+                            templates.
+
+                            Template literals are sometimes informally called template strings, because they are
+                            used most commonly for string
+                            interpolation (to create strings by doing substitution of placeholders). However, a
+                            tagged template literal may not
+                            result in a string; it can be used with a custom tag function to perform whatever
+                            operations you want on the different
+                            parts of the template literal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- modal section -->
+        <section class="news-modal">
+            <!-- news details modal -->
+            <!-- The button to open modal -->
+            <!-- <label for="my-modal-5" class="btn modal-button">open modal</label> -->
+
+            <!-- Put this part before body tag -->
+            <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+            <div class="modal">
+                <div id="news-modal" class="modal-box w-11/12 max-w-5xl">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="bg-white text-center py-6 text-lg font-normal text-gray-500">
+        <p>Copywrite 2022 Morning Press</p>
+    </footer>
+    <!-- footer end -->
+
+    <!-- javascript file -->
+    <script src="js/library.js"></script>
+    <script src="js/news.js"></script>
+</body>
+
+</html>
