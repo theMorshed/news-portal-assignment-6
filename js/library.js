@@ -46,11 +46,16 @@ const displayAllNews = newsArr => {
                         <i class="fa-regular fa-star text-2xl"></i>
                         <i class="fa-regular fa-star text-2xl"></i>
                     </div>
-                    <i class="fa-solid fa-arrow-right text-2xl text-primary"></i>
+                    <label for="my-modal-5" class="fa-solid fa-arrow-right text-2xl text-primary"></label>
                 </div>
             </div>
         </div>
         `;
         newsContainer.appendChild(singleNewsDiv);
     })
+}
+
+const displayNewsCount = (newsCount, categoryName) => {
+    const newsCountContainer = document.getElementById('news-count');
+    newsCountContainer.innerText = `${newsCount} items found for category ${categoryName}`;
 }

@@ -18,6 +18,7 @@ categoriesContainer.addEventListener('click', async (event) => {
         return b.total_view - a.total_view;
     });
     displayAllNews(newsArray);
+    displayNewsCount(newsArray.length, categoryValue);
 
     progressBar.classList.add('hidden');
 })

@@ -63,7 +63,7 @@
             <!-- news info section -->
             <div class="new-info">
                 <div class="news-count navbar bg-base-100 rounded-lg pl-5 my-6">
-                    <a class="normal-case text-xl">4 items found for category Entertainment</a>
+                    <a id="news-count" class="normal-case text-xl"></a>
                 </div>
 
                 <div class="sort-news ml-8 py-6 flex justify-between">
@@ -71,9 +71,8 @@
                         <a class="normal-case text-xl">Sort By View: </a>
                         <select class="select w-30 max-w-xs ml-8">
                             <option disabled selected>Default</option>
-                            <option>Normal Apple</option>
-                            <option>Normal Orange</option>
-                            <option>Normal Tomato</option>
+                            <option>Trending News</option>
+                            <option>Hot News</option>
                         </select>
                     </div>
                     <div class="sort-button">
@@ -133,6 +132,25 @@
                                 <i class="fa-solid fa-arrow-right text-2xl text-primary"></i>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- modal section -->
+        <section class="news-modal">
+            <!-- news details modal -->
+            <!-- The button to open modal -->
+            <!-- <label for="my-modal-5" class="btn modal-button">open modal</label> -->
+            
+            <!-- Put this part before </body> tag -->
+            <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                    <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                    <div class="modal-action">
+                        <label for="my-modal-5" class="btn">Yay!</label>
                     </div>
                 </div>
             </div>
