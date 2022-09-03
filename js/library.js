@@ -109,7 +109,6 @@ const displayAllNews = newsArr => {
 const displayNewsCount = (newsCount, categoryName) => {
     const newsCountContainer = document.getElementById('news-count');
     newsCountContainer.innerText = `${newsCount} items found for category ${categoryName}`;
-    newsCountContainer.classList.add('text-primary');
 }
 
 // display modal after click consequetive news
