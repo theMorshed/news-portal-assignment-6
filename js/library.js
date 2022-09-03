@@ -5,7 +5,7 @@ const loadAllCategories = async () => {
         return categories;
     }
     catch (err) {
-        console.log(err);
+        displayCatchError();
     }
 }
 
@@ -16,7 +16,7 @@ const loadSingleCategory = async (categoryId) => {
         return category;
     }
     catch (err) {
-        console.log(err);
+        displayCatchError();
     }
 }
 
@@ -27,13 +27,22 @@ const loadSingleNewsDetails = async (newsId) => {
         return news;
     }
     catch (err) {
-        console.log(err);
+        displayCatchError();
     }
+}
+
+const displayCatchError = () => {
+    const newsCountContainer = document.getElementById('news-count');
+    newsCountContainer.innerText = `${err}`;
+    newsCountContainer.classList.add('text-red-700', 'font-semibold');
 }
 
 const displayAllNews = newsArr => {
     const newsContainer = document.getElementById('news-container');
     newsContainer.textContent = '';
+    if (newsArr.length < 1) {
+        newsContainer.innerHTML = `<h1 class="text-5xl text-red-700 text-center font-semibold py-12">No News Found, Please Click another Category Menu..</h1>`;
+    }
     newsArr.forEach(news => {
         const { title, details, image_url, total_view, _id: id } = news;
         const { name: author_name, img: author_image, published_date: dateStr } = news.author;
@@ -81,6 +90,7 @@ const displayAllNews = newsArr => {
 const displayNewsCount = (newsCount, categoryName) => {
     const newsCountContainer = document.getElementById('news-count');
     newsCountContainer.innerText = `${newsCount} items found for category ${categoryName}`;
+    newsCountContainer.classList.add('text-primary');
 }
 
 const displayDetails = async id => {
