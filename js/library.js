@@ -69,7 +69,7 @@ const displayAllNews = newsArr => {
         singleNewsDiv.innerHTML = `
         <div class="card lg:card-side bg-base-100 shadow-xl px-4 py-3 my-7">
             <figure>
-                <img class="w-72 h-80" src="${thumbnail_url}" alt="blog">
+                <img class="w-72 h-80 min-w-full min-h-full object-cover" src="${thumbnail_url}" alt="blog">
             </figure>
             <div class="card-body">
                 <h2 class="card-title text-3xl mb-3">${title ? title : 'Not Available'}</h2>
